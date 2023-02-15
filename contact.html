@@ -1,0 +1,187 @@
+<div class="container_old" ng-controller="myCTRL">
+  <br />
+  <h2 class="tieude">Develop Infor</h2>
+  <br />
+  <div class="old_list row">
+    <div class="old_list-item col p-4">
+      <img src="/img/duy1.jpg" class="img_dev" alt="" />
+      <br />
+      <p>Name: Do Ngoc Duy</p>
+      <p>Student Code: Student1429829</p>
+      <p>Contact By</p>
+      <div class="icon_dev">
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon facebook">
+            <i class="fas fa-facebook"></i>
+          </div>
+        </a>
+
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon youtube">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </div>
+        </a>
+
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+        </a>
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon twitter">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="old_list-item col p-4">
+      <img src="/img/quynh1.jpg" class="img_dev" alt="" />
+      <br />
+      <p>Name: Tran Thi Diem Quynh</p>
+      <p>Student Code: Student1429093</p>
+      <p>Contact By</p>
+      <div class="icon_dev">
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </a>
+
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon youtube">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </div>
+        </a>
+
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+        </a>
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon twitter">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="old_list-item col p-4">
+      <img src="/img/duy1.jpg" class="img_dev" alt="" />
+      <br />
+      <p>Name: Nguyen Dinh Hoai Nghia</p>
+      <p>Student Code: Student1429114</p>
+      <p>Contact By</p>
+      <div class="icon_dev">
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+        </a>
+
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon youtube">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </div>
+        </a>
+
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+        </a>
+        <a href="#" target="blank" class="social-margin">
+          <div class="social-icon twitter">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h2 class="tieude">Feedback And Show Feedback</h2>
+  <br>
+  <div class="feedback" >
+    
+    <div class="table table-hover table-striped " >
+      <h3 style="text-align: center;">Show Feedback</h3>
+      <table class="table_sub">
+        <thead class="table_sub-item">
+          <tr class="table_sub-list">
+            <th class="table_item-list">sr.No:</th>
+            <th class="table_item-list">Name:</th>
+           
+            <th class="table_item-list">Feedback:</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="x in ds">
+              <td>{{$index+1}}</td>
+             
+              <td>{{x.name}}</td>
+             
+              <td>{{x.feedback}}</td>
+              <!-- <td>
+                  <button type="button" class="btn btn-success" ng-click="remove(x.id)"> delete </button>
+              </td> -->
+          </tr>
+      </tbody>
+      </table>
+    </div>
+    <div class="add_feed">
+        
+        <form ng-submit="addFeed()" class="form_add">
+          <h3 style="text-align: center;">Feedback</h3>
+          <div class="add_feed-item">
+            <label>Name:</label>
+            <input
+            ng-model="name"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter name:"
+              required
+            />
+          </div>
+          <div class="add_feed-item">
+            <label>Email:</label>
+            <input
+            ng-model="email"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="xx@email.com"
+              required
+            />
+          </div>
+          <div class="add_feed-item">
+            <label>Feedback:</label>
+            <textarea
+            ng-model="feedback"
+              name="feedback"
+              id="feedback"
+              rows="3"
+              placeholder=" Give us your feedback"
+            ></textarea>
+          </div>
+          <input type="reset" value="Clear" class="btn_reset" />
+          <button type="submit" class="btn_submit">Send Feedback</button>
+        </form>
+      
+    </div>
+    </div>
+    <br />
+    <div class="location">
+      <h2 class="tieude">Our Location</h2>
+      <br />
+      <iframe class="map_contact"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.9575834822479!2d106.66626652785999!3d10.786682429560997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1662485400756!5m2!1sen!2s"
+        
+        
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</div>
