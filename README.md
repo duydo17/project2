@@ -18,6 +18,8 @@ github report link: https://github.com/duydo17/project2
 
 eProject published at: https://duydo17.github.io/project2/#!/#%2F!
 
+document link:  https://github.com/duydo17/project2/tree/main/document
+
 ============================
 
 Thank you for spending your time to look at our work.
