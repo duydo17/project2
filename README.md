@@ -14,7 +14,6 @@ Tran Thi Diem Quynh: Student1429093
 
 Nguyen Dinh Hoai Nghia: Student1429114
 
-github report link: https://github.com/duydo17/project2
 
 eProject published at: https://duydo17.github.io/project2/#!/#%2F!
 
