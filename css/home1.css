@@ -314,6 +314,12 @@ li {
   background-color: rgb(238, 238, 132);
   margin-bottom: 5px;
 }
+.btn_reset:hover{
+  background-color: rgb(240, 151, 43);
+}
+.btn_submit:hover{
+  background-color: rgb(14, 148, 148);
+}
 .btn_submit {
   border: none;
   width: 110px;
